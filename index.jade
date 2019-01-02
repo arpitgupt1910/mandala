@@ -2,19 +2,21 @@ html
     head
         link(rel="stylesheet", href="css/index.css")
         link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Mandala by Sonakshi
     body
+        //- This was a two-hour coding challenge. Email me at sathyah@andrew.cmu.edu with your time. PS- I cannot touchtype. PPS- Arpit has a small penis
         .header 
             h5 MANDALA BY SONAKSHI
         .menu 
             .menu-itms
-                .menuitm Home
-                .menuitm Art
-                .menuitm Contact
-        .main 
+                a(class="menuitm" href="#art") ART
+                a(class="menuitm" href="#about") ABOUT
+                a(class="menuitm" href="#contact") Contact
+        .main
             h4 SONAKSHI<br/> DHARMDASANI
             p(class="sub-h") Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestias quibusdam consequuntur aliquam a itaque, non dolores facilis, nisi ratione debitis ipsa blanditiis repellendus perspiciatis laboriosam impedit. Laboriosam, accusamus sequi?
-        .section2
+        .section2(id="art")
             .grid
                 .row
                     .item(id="1")
@@ -37,7 +39,7 @@ html
                         .share
                     .item(id="9")
                         .share
-        .section3
+        .section3(id="about")
             .left
             .right
                 h1 MANDALA<br/> BY<br/> SONAKSHI
@@ -48,7 +50,7 @@ html
         //-     .quote
         //-         //- h2 "Beauty is the gift of God"
         //-         //- p Aristotle
-        .section5
+        .section5(id="contact")
             h3 Contact Me
             p(style="margin-top:20px;") Send me a message if you want to work with me on a project
             .contact(style="margin-top:40px;")
@@ -65,3 +67,5 @@ html
                 i(class="fas fa-heart beating") 
                 span   by AG for 
                     b SD
+        script(src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js")
+        script(src="scripts/index.js")
