@@ -5,6 +5,10 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
 h1{
     font-size: 3.6em;
 }
