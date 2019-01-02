@@ -31,7 +31,8 @@ body{
     padding: 8em;
     padding-top: 10em;
     padding-bottom: 10em;
-    background: #000;
+    background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),url('pics/back.jpg') fixed center center;
+    background-size: cover;
     color: #fff;
 }
 .header{
@@ -46,6 +47,7 @@ body{
 .menu-itms{
     position: relative;
     display: flex;
+    font-weight:500;
     flex-direction: row;
     justify-content: center;
 }
@@ -57,13 +59,16 @@ body{
     text-transform: uppercase;
     letter-spacing: 2px;
     cursor: pointer;
+    margin-left: 5px;
 }
 .menuitm:nth-child(3){
     width: 120px;
 }
+.menuitm:nth-child(1){
+    margin-left: 0;
+}
 .menuitm:hover{
-    background: #000;
-    color: #fff;
+    box-shadow: inset 0 -3px 0 #000;
 }
 .sub-h{
     width:60%;
@@ -113,7 +118,7 @@ body{
     height: 100vh;
     width: 50vw;
     float: left;
-    background: #eee fixed center center;
+    background: url('pics/back-m.jpg') fixed center center;
     background-size: cover;
 }
 .right{
@@ -127,21 +132,163 @@ body{
     padding-top: 7em;
     padding-bottom: 7em;
 }
-.section4{
+.section7{
     position: relative;
-    background: #000;
+    transform: translateY(30vh);
+    width: 100vw;
     padding: 3em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    transform: translateY(100vh);
-    line-height: 0;
-}
-.quote{
-    position: relative;
-    height: 500px;
+    padding-bottom: 4em;
     text-align: center;
-    background: #eee;
+    color: #000;
+}
+.circle{
+    position: relative;
+    margin: auto;
+    transform: translateY(60vh);
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    background: url('pics/sonakshi.jpeg') center center;
+    background-size: cover;
+}
+.section5{
+    position: relative;
+    transform: translateY(40vh);
+    width: 100vw;
+    padding: 3em;
+    padding-bottom: 4em;
+    text-align: center;
+    color: #000;
+}
+.contact{
+    position: relative;
+    margin: auto;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.about{
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 550px;
+}
+.divider{
+    position: relative;
+    width:200px;
+    box-shadow: none;
+    border: 2px solid rgba(0,0,0,0.1);
+    margin-top: 40px;
+}
+.icon{
+    color: #000;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin: 15px;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+}
+.icon:hover{
+    opacity: .6;
+}
+.section6{
+    transform: translateY(30vh);
+    text-align: center;
     color: #fff;
+    background: #000;
+    padding: .2em;
+    font-size: 1.5em;
+}
+.beating{
+    color: #e74c3c;
+    /* animation: beating .4s infinite; */
+}
+#pic1{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url('pics/1.png') center center;
+    background-size: cover;
+}
+#pic1:hover{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('pics/1.png') center center;
+    background-size: cover;
+}
+#pic2{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('pics/2.png') center center;
+    background-size: cover;
+}
+#pic2:hover{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('pics/2.png') center center;
+    background-size: cover;
+}
+#pic3{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('pics/3.png') center center;
+    background-size: cover;
+}
+#pic3:hover{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('pics/3.png') center center;
+    background-size: cover;
+}
+#pic4{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('pics/4.png') center center;
+    background-size: cover;
+}
+#pic4:hover{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('pics/4.png') center center;
+    background-size: cover;
+}
+#pic5{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('pics/5.jpeg') center center;
+    background-size: cover;
+}
+#pic5:hover{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('pics/5.jpeg') center center;
+    background-size: cover;
+}
+#pic6{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('pics/6.jpeg') center center;
+    background-size: cover;
+}
+#pic6:hover{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('pics/6.jpeg') center center;
+    background-size: cover;
+}
+#pic7{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('pics/7.jpeg') center center;
+    background-size: cover;
+}
+#pic7:hover{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('pics/7.jpeg') center center;
+    background-size: cover;
+}
+#pic8{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('pics/8.jpeg') center center;
+    background-size: cover;
+}
+#pic8:hover{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('pics/8.jpeg') center center;
+    background-size: cover;
+}
+#pic9{
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),url('pics/9.png') center center;
+    background-size: cover;
+}
+#pic9:hover{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url('pics/9.png') center center;
+    background-size: cover;
+}
+@keyframes beating{
+    0%{
+        font-size: 1.5em;
+    }
+    50%{
+        font-size: 1.8em;
+    }
+    100%{
+        font-size: 1.5em;
+    }
 }
 @media(max-width:600px){
     .main{
@@ -177,55 +324,10 @@ body{
         font-size: 1em;
         font-weight: 400;
     }
-}
-.section5{
-    position: relative;
-    transform: translateY(10vh);
-    width: 100vw;
-    padding: 3em;
-    padding-bottom: 4em;
-    text-align: center;
-    color: #000;
-}
-.contact{
-    position: relative;
-    margin: auto;
-    width: 300px;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.icon{
-    color: #000;
-    cursor: pointer;
-    font-size: 1.2em;
-    margin: 5px;
-    text-align: center;
-    height: 20px;
-    width: 20px;
-    line-height: 20px;
-}
-.section6{
-    transform: translateY(10vh);
-    text-align: center;
-    color: #fff;
-    background: #000;
-    padding: .2em;
-    font-size: 1.5em;
-}
-.beating{
-    color: #e74c3c;
-    /* animation: beating .4s infinite; */
-}
-@keyframes beating{
-    0%{
-        font-size: 1.5em;
+    .circle{
+        transform: translateY(160vh);
     }
-    50%{
-        font-size: 1.8em;
-    }
-    100%{
-        font-size: 1.5em;
+    .about{
+        width: 100%;
     }
 }
